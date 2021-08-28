@@ -22,7 +22,9 @@ export default function Project({ title, desc, tags, github, demo }) {
       shadow="md"
     >
       <HStack>
-        <Heading>{title}</Heading>
+        <Heading size="lg" fontStyle="italic">
+          {title}
+        </Heading>
         <Spacer />
         <Button size="sm" colorScheme="blue">
           Github
