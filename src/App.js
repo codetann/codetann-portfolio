@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { VStack } from "@chakra-ui/layout";
+import Nav from "./components/Nav/Nav";
+import Hero from "./components/Hero/Hero";
+import Skills from "./components/About/Skills";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <VStack w="100%" minH="100vh" padding="2rem" align="center">
+      <VStack w="100%" maxW="1200px">
+        <Nav />
+        <Hero />
+        <Skills />
+        <Projects />
+      </VStack>
+    </VStack>
   );
 }
 
