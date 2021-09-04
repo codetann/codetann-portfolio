@@ -3,6 +3,12 @@ import { VStack, Heading, Text, Button, HStack } from "@chakra-ui/react";
 import ResumeMenu from "./ResumeMenu";
 
 export default function Hero() {
+  const handleEmail = (link) => {
+    const anchor = document.createElement("a");
+    anchor.href = "mailto:codetann@gmail.com";
+    anchor.target = "_blank";
+    anchor.click();
+  };
   return (
     <VStack h="75vh" justify="center" align="left" spacing="2rem" w="100%">
       <Heading>Hello 👋, I am</Heading>
@@ -16,7 +22,9 @@ export default function Hero() {
         technology and design.
       </Text>
       <HStack>
-        <Button colorScheme="blue">Contact Me</Button>
+        <Button onClick={handleEmail} colorScheme="blue">
+          Contact Me
+        </Button>
         <ResumeMenu />
       </HStack>
     </VStack>

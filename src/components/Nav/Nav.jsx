@@ -10,14 +10,29 @@ const Logo = () => (
 );
 
 export default function Nav() {
+  const handleClick = (link) => {
+    const anchor = document.createElement("a");
+    anchor.href = link;
+    anchor.target = "_blank";
+    anchor.click();
+  };
+
   return (
     <HStack w="100%">
       <Logo />
       <Spacer />
       <HStack spacing="1rem">
-        <Link>Blog</Link>
-        <IconButton icon={<GithubIcon />} />
-        <IconButton icon={<LinkedInIcon />} />
+        <Link onClick={() => handleClick("https://dev.to/codetann")}>Blog</Link>
+        <IconButton
+          onClick={() => handleClick("https://github.com/codetannlin")}
+          icon={<GithubIcon />}
+        />
+        <IconButton
+          onClick={() =>
+            handleClick("https://www.linkedin.com/in/tanner-thomas/")
+          }
+          icon={<LinkedInIcon />}
+        />
       </HStack>
     </HStack>
   );
