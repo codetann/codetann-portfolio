@@ -7,29 +7,29 @@ const personProjects = [
     title: "Pixels",
     desc: "A free stock photo web app, based on the pexels API. This project provides the ability to save your favorite images with the power of local storage.",
     tags: ["React", "Pexels API", "React Hooks", "React-Router"],
-    github: "",
-    demo: "",
+    github: "https://github.com/codetann/pixels-portfolio",
+    demo: "https://6035474117e47b09cf8fc69b--cranky-noether-5d469c.netlify.app/",
   },
   {
     title: "Join A Room",
     desc: "A simple chatroom application, which provides users with the ability to choose a username, room name, and connect with their friends.",
     tags: ["React", "Express", "Socket.io", "NodeJS", "Heroku", "Sass"],
-    github: "",
-    demo: "",
+    github: "https://github.com/codetann/join-a-room",
+    demo: "https://join-a-room-app.herokuapp.com/",
   },
   {
     title: "Qwiz",
     desc: "A web application made for trivia. Allows users to pick a category, difficulty, and nickname. Saves the users score and nickname to firebase.",
     tags: ["React", "Styled-Components", "Firebase", "React-Router"],
-    github: "",
-    demo: "",
+    github: "https://github.com/codetann/QWIZ",
+    demo: "https://infallible-hypatia-374001.netlify.app/",
   },
   {
     title: "Shortly",
     desc: "A free online url shortening tool, that allows users to enter any url and have a shortend version returned.",
     tags: ["Svelte", "Express", "MongoDB"],
-    github: "",
-    demo: "",
+    github: "https://github.com/codetann/shortly",
+    demo: "https://stly.us",
   },
 ];
 
@@ -44,6 +44,8 @@ export default function Projects() {
             title={project.title}
             desc={project.desc}
             tags={project.tags}
+            github={project.github}
+            demo={project.demo}
           />
         ))}
       </SimpleGrid>

@@ -11,6 +11,14 @@ import {
 } from "@chakra-ui/react";
 
 export default function Project({ title, desc, tags, github, demo }) {
+  const handleLink = (link) => {
+    const a = document.createElement("a");
+    a.target = "_blank";
+    a.href = link;
+    a.click();
+    a.remove();
+  };
+
   return (
     <VStack
       w="100%"
@@ -22,14 +30,16 @@ export default function Project({ title, desc, tags, github, demo }) {
       shadow="md"
     >
       <HStack>
-        <Heading size="lg" fontStyle="italic">
+        <Heading size="lg" color="blue.200">
           {title}
         </Heading>
         <Spacer />
-        <Button size="sm" colorScheme="blue">
+        <Button size="sm" colorScheme="blue" onClick={() => handleLink(github)}>
           Github
         </Button>
-        <Button size="sm">Demo</Button>
+        <Button size="sm" onClick={() => handleLink(demo)}>
+          Demo
+        </Button>
       </HStack>
       <Wrap>
         {tags.map((tag) => (

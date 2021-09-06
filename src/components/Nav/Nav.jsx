@@ -24,7 +24,7 @@ export default function Nav() {
       <HStack spacing="1rem">
         <Link onClick={() => handleClick("https://dev.to/codetann")}>Blog</Link>
         <IconButton
-          onClick={() => handleClick("https://github.com/codetannlin")}
+          onClick={() => handleClick("https://github.com/codetann")}
           icon={<GithubIcon />}
         />
         <IconButton
