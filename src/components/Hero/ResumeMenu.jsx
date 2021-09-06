@@ -18,6 +18,12 @@ export default function ResumeMenu() {
     anchor.click();
   };
 
+  const handleHTML = () => {
+    const anchor = document.createElement("a");
+    anchor.href = "/resume";
+    anchor.click();
+  };
+
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
@@ -26,7 +32,7 @@ export default function ResumeMenu() {
       <MenuList>
         <MenuItem onClick={handleDownload}>PDF</MenuItem>
         <MenuItem onClick={handleDoc}>Google Doc</MenuItem>
-        <MenuItem>HTML</MenuItem>
+        <MenuItem onClick={handleHTML}>HTML</MenuItem>
       </MenuList>
     </Menu>
   );
