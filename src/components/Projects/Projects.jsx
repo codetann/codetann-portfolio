@@ -4,6 +4,13 @@ import Project from "./Project";
 
 const personProjects = [
   {
+    title: "My Links",
+    desc: "A linktree clone, showcasing links to my verious sites. The link is placed in your social media bio allowing friends and family to connect with what matters most.",
+    tags: ["React", "Chakra-UI", "Netlify"],
+    github: "https://github.com/codetann/linktree-clone",
+    demo: "https://romantic-swartz-914e81.netlify.app/",
+  },
+  {
     title: "Pixels",
     desc: "A free stock photo web app, based on the pexels API. This project provides the ability to save your favorite images with the power of local storage.",
     tags: ["React", "Pexels API", "React Hooks", "React-Router"],
