@@ -42,9 +42,11 @@ const personProjects = [
 
 export default function Projects() {
   return (
-    <VStack w="100%" align="left">
-      <Heading>Projects</Heading>
-      <Text pb="2rem">Collection of personal projects.</Text>
+    <VStack w="100%" align="left" pb="8rem">
+      <Heading>📂 Projects</Heading>
+      <Text pb="2rem" opacity=".7">
+        Collection of personal projects.
+      </Text>
       <SimpleGrid columns={[1, 1, 2]} spacing="2rem">
         {personProjects.map((project) => (
           <Project

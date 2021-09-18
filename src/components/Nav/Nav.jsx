@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, Heading, IconButton, HStack, Spacer } from "@chakra-ui/react";
-import { GithubIcon, LinkedInIcon } from "../Icons/Icons";
+import { GithubIcon, LinkedInIcon, TwitterIcon } from "../Icons/Icons";
 
 const Logo = () => (
   <HStack spacing="0">
     <Heading>TT</Heading>
-    <Heading color="blue.200">.</Heading>
+    <Heading color="teal.200">.</Heading>
   </HStack>
 );
 
@@ -22,7 +22,7 @@ export default function Nav() {
       <Logo />
       <Spacer />
       <HStack spacing="1rem">
-        <Link onClick={() => handleClick("https://dev.to/codetann")}>Blog</Link>
+        {/* <Link onClick={() => handleClick("https://dev.to/codetann")}>Blog</Link> */}
         <IconButton
           onClick={() => handleClick("https://github.com/codetann")}
           icon={<GithubIcon />}
@@ -32,6 +32,10 @@ export default function Nav() {
             handleClick("https://www.linkedin.com/in/tanner-thomas/")
           }
           icon={<LinkedInIcon />}
+        />
+        <IconButton
+          onClick={() => handleClick("https://twitter.com/codetann")}
+          icon={<TwitterIcon />}
         />
       </HStack>
     </HStack>

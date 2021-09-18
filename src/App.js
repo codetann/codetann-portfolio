@@ -4,6 +4,7 @@ import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Skills from "./components/About/Skills";
 import Projects from "./components/Projects/Projects";
+import { Contact } from "./components/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Skills />
         <Projects />
+        <Contact />
       </VStack>
     </VStack>
   );

@@ -30,11 +30,9 @@ export default function Project({ title, desc, tags, github, demo }) {
       shadow="md"
     >
       <HStack>
-        <Heading size="lg" color="blue.200">
-          {title}
-        </Heading>
+        <Heading size="lg">{title}</Heading>
         <Spacer />
-        <Button size="sm" colorScheme="blue" onClick={() => handleLink(github)}>
+        <Button size="sm" colorScheme="teal" onClick={() => handleLink(github)}>
           Github
         </Button>
         <Button size="sm" onClick={() => handleLink(demo)}>
@@ -43,10 +41,10 @@ export default function Project({ title, desc, tags, github, demo }) {
       </HStack>
       <Wrap>
         {tags.map((tag) => (
-          <Tag colorScheme="blue">{tag}</Tag>
+          <Tag colorScheme="teal">{tag}</Tag>
         ))}
       </Wrap>
-      <Text>{desc}</Text>
+      <Text opacity=".7">{desc}</Text>
     </VStack>
   );
 }

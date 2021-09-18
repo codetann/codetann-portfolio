@@ -28,9 +28,11 @@ const Icons = [
 
 export default function About() {
   return (
-    <VStack w="100%" align="left" pb="4rem">
-      <Heading>Skills</Heading>
-      <Text pb="2rem">Technologies I've worked with.</Text>
+    <VStack w="100%" align="left" pb="8rem">
+      <Heading>✏️ Skills</Heading>
+      <Text pb="2rem" opacity=".7">
+        Technologies I've worked with.
+      </Text>
       <Wrap w="100%" spacing="1rem" justify="space-between">
         {Icons.map((icon) => (
           <VStack
