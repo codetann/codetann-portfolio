@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { getDatabase } from "../../utils/notion";
 import {
   VStack,
   HStack,
@@ -11,12 +10,6 @@ import {
 } from "@chakra-ui/react";
 
 export function Contact() {
-  const [name, setName] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [message, setMessage] = useState(null);
-
-  getDatabase();
-
   return (
     <VStack w="100%" p="2rem 0">
       <Heading>📧 Get In Touch</Heading>
