@@ -14,7 +14,6 @@ function App() {
         <Hero />
         <Skills />
         <Projects />
-        <Contact />
       </VStack>
     </VStack>
   );
